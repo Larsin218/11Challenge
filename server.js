@@ -1,12 +1,13 @@
 const express = require("express");
 const noteRoutes = require("./routes/noteRoutes");
 const app = express();
+const path = require('path')
 
-const PORT = precess.exv.port || 3001;
+const PORT = process.env.port || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("./api/notes", noteRoutes);
+app.use("/api", noteRoutes);
 
 app.use(express.static("public"));
 
