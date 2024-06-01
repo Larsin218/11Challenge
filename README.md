@@ -11,7 +11,6 @@ To install the project:
 To use the project:
 - Open it in a text editor of your choice
 - In the terminal, run `npm i`
-- Once that is done, run `npm run seed`
 - Then run `npm start` to start the server
 - Enter `http://localhost:3001` in your browser
 
